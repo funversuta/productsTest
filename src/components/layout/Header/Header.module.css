@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  background: var(--colorSurface);
+  border-bottom: 1px solid var(--colorBorder);
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--colorText);
+  justify-self: start;
+}
+
+.center {
+  justify-self: center;
+  width: min(1023px, 53.3vw);
+  min-width: 280px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-self: end;
+}

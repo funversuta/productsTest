@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  height: 4px;
+  background: var(--colorSecondaryHover);
+  border-radius: var(--radiusXs);
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: var(--progressBarWidth);
+  background: linear-gradient(90deg, var(--colorAccent), var(--colorAccentGradientEnd));
+  border-radius: var(--radiusXs);
+  animation: progress 1.2s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(var(--progressBarTranslateEnd));
+  }
+}
